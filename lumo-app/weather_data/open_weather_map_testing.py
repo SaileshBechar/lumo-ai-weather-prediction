@@ -3,8 +3,6 @@ import datetime
 import pprint
 import json
 
-API_KEY = "505121894cf6d0b700415ea1fb337132"
-
 # city_id = "Waterloo,ON,CA"
 # longitude = "43.47290147661985"
 # latitude = "-80.54493092329561"

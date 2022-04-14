@@ -19,8 +19,8 @@ w_specBounds = [-82.2, -79.35576, 42.7, 44.603355]
 
 def getS3FileNames(TFRecordPath,basePath,numFiles):
         s3_client = boto3.client( 's3',
-            aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-            aws_secret_access_key="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",
+            aws_access_key_id="",
+            aws_secret_access_key="",
             region_name="us-east-1"
         )
         os.makedirs(basePath, exist_ok =True)    
@@ -90,8 +90,8 @@ def generateGroundTruth_1hr(tfRecords,gribGroundTruthsPath,basePath):
   filenames = getS3FileNames(tfRecords,basePath,13)
 
   s3_client = boto3.client( 's3',
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
           region_name="us-east-1"
     )
       

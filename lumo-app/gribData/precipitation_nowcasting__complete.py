@@ -277,8 +277,8 @@ def graphGrib(row,map_extent = [-106.0, -78.05576, 30.0, 47.603355]):
 #pull tf records in
 def getS3FileNames(TFRecordPath):
   s3_client = boto3.client( 's3',
-        aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-        aws_secret_access_key="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",
+        aws_access_key_id="",
+        aws_secret_access_key="",
         region_name="us-east-1"
     )
       
@@ -337,8 +337,8 @@ def plot_animation_grib(field,gribGroundTruthsPath,FrameData,map_extent = [-106.
   
 
     s3_client = boto3.client( 's3',
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
           region_name="us-east-1"
     )
     #s3://lumo-app/examples/predictions/mrms_24hr/  
@@ -398,8 +398,8 @@ def plot_animation_grib(field,gribGroundTruthsPath,FrameData,map_extent = [-106.
       img_data.seek(0)
 
       session = boto3.Session(
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
       )
       s3 = session.resource('s3')
       bucket = s3.Bucket("lumo-app")

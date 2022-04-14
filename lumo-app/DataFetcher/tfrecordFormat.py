@@ -198,8 +198,8 @@ def plot_animation_grib(field,FrameData,map_extent = [-106.0, -78.05576, 30.0, 4
   
 
     s3_client = boto3.client( 's3',
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
           region_name="us-east-1"
     )
       
@@ -259,8 +259,8 @@ def plot_animation_grib(field,FrameData,map_extent = [-106.0, -78.05576, 30.0, 4
       img_data.seek(0)
 
       session = boto3.Session(
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
       )
       s3 = session.resource('s3')
       bucket = s3.Bucket("lumo-app")
@@ -275,8 +275,8 @@ def grib_png(row,index,gribGroundTruthsPath,map_extent = [-106.0, -78.05576, 30.
   
     #s3Pre = 
     s3_client = boto3.client( 's3',
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
           region_name="us-east-1"
     )
       
@@ -333,8 +333,8 @@ def grib_png(row,index,gribGroundTruthsPath,map_extent = [-106.0, -78.05576, 30.
     img_data.seek(0)
 
     session = boto3.Session(
-        aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-        aws_secret_access_key="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",
+        aws_access_key_id="",
+        aws_secret_access_key="",
     )
     s3 = session.resource('s3')
     bucket = s3.Bucket("lumo-app")

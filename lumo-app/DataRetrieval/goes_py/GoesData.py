@@ -196,8 +196,8 @@ class GoesData(object):
         img_data.seek(0)
             
         session = boto3.Session(
-            aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-            aws_secret_access_key="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",
+            aws_access_key_id="",
+            aws_secret_access_key="",
         )
         s3 = session.resource('s3')
         bucket = s3.Bucket("lumo-app")

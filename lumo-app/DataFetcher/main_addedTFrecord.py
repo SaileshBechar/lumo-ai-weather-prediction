@@ -232,8 +232,8 @@ def generate_rmse(gt_arr, pred_arr, band):
 
 def plot_rmse(rmse_arr, band, num_frames):
     s3_client = boto3.client( 's3',
-                aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-                aws_secret_access_key="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",
+                aws_access_key_id="",
+                aws_secret_access_key="",
                 region_name="us-east-1"
             )
             
@@ -255,8 +255,8 @@ def plot_rmse(rmse_arr, band, num_frames):
     img_data.seek(0)
         
     session = boto3.Session(
-        aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-        aws_secret_access_key="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",
+        aws_access_key_id="",
+        aws_secret_access_key="",
     )
     s3 = session.resource('s3')
     bucket = s3.Bucket("lumo-app")
@@ -277,8 +277,8 @@ if __name__ == "__main__":
     #lumo_session = boto3.Session()
 
     lumo_session = boto3.Session(
-          aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-          aws_secret_access_key="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",
+          aws_access_key_id="",
+          aws_secret_access_key="",
       )
     lumo_client = lumo_session.client("s3")
 

@@ -212,8 +212,8 @@ class MRMSNowCastingFunctions():
     #pull tf records in
     def getS3FileNames(TFRecordPath,basePath,numFiles):
         s3_client = boto3.client( 's3',
-                aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-                aws_secret_access_key="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",
+                aws_access_key_id="",
+                aws_secret_access_key="",
                 region_name="us-east-1"
             )
         os.makedirs(basePath, exist_ok =True)    
@@ -280,8 +280,8 @@ class MRMSNowCastingFunctions():
     
 
         s3_client = boto3.client( 's3',
-            aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-            aws_secret_access_key="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",
+            aws_access_key_id="",
+            aws_secret_access_key="",
             region_name="us-east-1"
         )
         #s3://lumo-app/examples/predictions/mrms_24hr/  
@@ -342,8 +342,8 @@ class MRMSNowCastingFunctions():
         img_data.seek(0)
 
         session = boto3.Session(
-            aws_access_key_id="AKIAWRHKEEZVRHAQDW6L",
-            aws_secret_access_key="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",
+            aws_access_key_id="",
+            aws_secret_access_key="",
         )
         s3 = session.resource('s3')
         bucket = s3.Bucket("lumo-app")
