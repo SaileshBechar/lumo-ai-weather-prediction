@@ -1,0 +1,14 @@
+.env
+goes_test.py
+tmp/
+__pycache__
+.vscode
+.ipynb_checkpoints
+/*.nc
+/*/*.gz
+/*.tfrecord
+/*.grib2
+/Nowcasting/*.png
+/Nowcasting/*.gif
+tfhub_snapshots/
+*/.aws

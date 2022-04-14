@@ -1,0 +1,14 @@
+[Unit]
+Description=Lumo Data Fetcher
+After=network.target
+
+[Service]
+ExecStart= /home/ubuntu/anaconda3/envs/lumo_data_env/bin/python /home/ubuntu/lumo-app/DataFetcher/main_addedTFrecord.py
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=lumo-data
+
+[Install]
+WantedBy=multi-user.target
